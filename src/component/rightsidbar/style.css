@@ -1,0 +1,42 @@
+.sidebar-right {
+  position: absolute;
+  top: 0;
+  right: 0; /* Align to the right side of the screen */
+  bottom: 0;
+  height: 80vh;
+  width: 250px;
+
+  transform: translateX(110%); /* Start off-screen to the right */
+  background-color: #c8e5fd; /* Light grey background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000; /* Ensure the sidebar-right appears above other content */
+  overflow-y: auto; /* Enable scrollbar when needed */
+border-radius: 10px;
+
+}
+
+.sidebar-right-content {
+  height: calc(100% - 20px); /* Adjust for padding */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar-right .close-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 40px; /* Align to the right */
+  cursor: pointer; /* Ensure pointer cursor on hover */
+  color: #01569b;
+}
+
+.sidebar-right.open {
+  transform: translateX(0); /* Slide in from the right */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .sidebar-right {
+    width: 200px;
+  }
+}

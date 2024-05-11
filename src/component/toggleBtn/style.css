@@ -1,0 +1,15 @@
+.toggle-btn {
+    background: none;
+    border: none;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    float: right;
+    font-size: xx-large;
+    cursor: pointer;
+    width: fit-content;
+  }
+ .left{
+        transform:rotate(180deg);
+
+  }

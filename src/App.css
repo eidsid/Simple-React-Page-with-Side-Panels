@@ -1,0 +1,53 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main {
+  overflow-x: hidden;
+  flex: 1;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+  height: 80vh;
+}
+
+.sidebar {
+  position: relative;
+  width: 20%;
+}
+
+.toggleContainer {
+  position: absolute;
+  top: 2rem;
+}
+
+.toggleContainer button {
+  width: 10px;
+  height: 10px;
+  border: none;
+  background: none;
+}
+
+.leftSidebar .toggleContainer {
+  left: 2rem;
+}
+
+.rightSidebar .toggleContainer {
+  right: 1rem;
+}
